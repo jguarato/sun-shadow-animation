@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #dce3e6;
+}
+
+.sky {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(63,166,215,1);
+}
+
+#sun {
+  z-index: -1;
+  width: 180px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 130px;
+  text-align: center;
+  transform-origin: bottom center;
+}
+
+.ground {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: green;
+}
+
+.object {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 130px;
+  text-align: center;
+  transform-origin: center center;
+  transform: translatey(-30%);
+}
+
+#shadow {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: center center;
+  transform: translatey(-84px) rotatex(75deg) rotatez(180deg);
+}
+
+
+.sun-range {
+  width: 400px;
+  padding: 10px;
+  margin: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  border-radius: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #d66f30;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d66f30;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1e1f26;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 10px;
+  text-align: center;
+  color: #F5F5F5;
+  font-family: Poppins;
+}
+
+footer a:link {
+  color: #b3a290;
+}
+footer a:visited {
+  color: #91d4d0;
+}
+footer a:hover {
+  color: #ff3300;
+}
+footer a:active {
+  color: #ff3300;
+}
+
+.name-dark {
+  color: #91d4d0;
+  text-decoration: none;
+  background: linear-gradient(to right, #91d4d0 50%, #ff3300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
