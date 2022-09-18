@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Poppins:wght@600&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
   background-color: #dce3e6;
+  line-height: 1;
 }
 
 .sky {
+  padding-top: 2vh;
   width: 100%;
-  height: 60vh;
+  height: 59vh;
   background-color: rgba(63,166,215,1);
 }
 
 #sun {
   z-index: -1;
-  width: 180px;
+  width: fit-content;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 130px;
+  font-size: 15vh;
   text-align: center;
   transform-origin: bottom center;
 }
@@ -31,23 +35,29 @@ html, body {
 }
 
 .object {
-  width: 180px;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  font-size: 130px;
+  font-size: 15vh;
   text-align: center;
   transform-origin: center center;
-  transform: translatey(-30%);
+  transform: translatey(-6vh);
+}
+
+#tree {
+  margin: 0;
+  width: fit-content;
 }
 
 #shadow {
+  margin: 0;
+  width: fit-content;
   background: rgba(0, 0, 0, 0.5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform-origin: center center;
-  transform: translatey(-84px) rotatex(75deg) rotatez(180deg);
+  transform: translatey(-6.2vh) rotatez(180deg) rotatex(75deg);
 }
-
 
 .sun-range {
   width: 400px;
@@ -57,7 +67,7 @@ html, body {
   margin-right: auto;
   background-color: white;
   border-radius: 5px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
@@ -91,7 +101,7 @@ html, body {
 
 footer {
   width: 100%;
-  height: 40px;
+  height: fit-content;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #1e1f26;
@@ -102,7 +112,7 @@ footer p {
   margin: 10px;
   text-align: center;
   color: #F5F5F5;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 
 footer a:link {

@@ -13,7 +13,7 @@ function moveSun(sunAngle) {
 
 function changeShadow(sunAngle) {
   
-  const fixedTransform = 'translatey(-84px) rotatex(75deg) rotatez(180deg)';
+  const fixedTransform = 'translatey(-6.2vh) rotatex(75deg) rotatez(180deg)';
    
   const skewAngle = Math.abs(sunAngle) > 30 ? 
       - sunAngle + (Math.sign(sunAngle) * 30) : - sunAngle / 2;
@@ -25,7 +25,7 @@ function changeShadow(sunAngle) {
   const treeMidHeight = (treeTop - treeBottom) / 2;
 
   let translatePos = treeMidHeight * Math.tan(skewAngleRad);
-  translatePos *= 0.82;
+  translatePos *= 0.93;
   
   const shadow = document.querySelector('#shadow');
   shadow.style.transform = fixedTransform +
